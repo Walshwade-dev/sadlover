@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miguni dreamland</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!--font awesome -->
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css">
+     <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css">
+    <!--font awesome -->
+  </head>
+  <body>
+    <!-- Create a container to have the content full at small screens and 3/4 wide in larger screens-->
+    <!-- my containers are section tags in which the contect will be held-->
+     <!-- my aim is to have the website have a header, main section and footer-->
+    <!-- The header holds the nav, which has the nav logo , nav menu and the light/dark toggle button-->
+     <!-- My Main section should have the hero landing section, the about section , music catalogue section and contact section-->
+      <!-- The footer should have the copyright rights of developer and the year and helpful links to help navigate or get more from the website-->
+    <header class="container">
+      <nav class="header__nav">
+        <div class="header__logo jusfify-center-row">
+          <h4>MIGUNI DREAMLAND</h4>
+          <div class="header__logo-overlay"></div>
+        </div>
+
+        <div class="header__menu">
+          <ul class="header__menu-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#music">Music</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#comments">Comments</a></li>
+          </ul>
+
+          <button id="theme__toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-sun-bright"></i>
+          </button>
+        </div>
+        
+        <div class=" hidden header__menu-mobile">
+          <ul class="header__menu-mobile-list">
+            <li>
+              <i class="fa-sharp fa-solid fa-bars"></i>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+
+    <main>
+      <section id="hero" class="container hero">
+        <div class="hero__image">
+          <img src="/images/instruments.png" alt="Miguni Dreamland Guitar" class="hero__image-guitar"/>
+          <h2>
+            M <br/> 
+            I <br/>
+            G <br/>
+            U <br/>
+            N <br/>
+            I <br/>
+          </h2>
+  
+          <div class="hero__image-overlay">
+            <h2 class="hero__image-reflection">MIGU</h2>
+          </div>
+        </div>
+
+        <div class="hero-content">
+          <div class="hero-content-info">
+            <h1>SADLOVER</h1>
+            <p>
+              Experience the unique Kamba sounds that blends modern beats with classical infusion.
+              Creating a musical journey that resonates with the soul.
+            </p>
+
+            <div class="hero-content__buttons">
+              <button class="hero-content__listen-button">
+                <i class="fa-solid fa-circle-play"></i>
+                Listen Now
+              </button>
+              <button class="hero-content__explore-button">
+                <i class="fa-duotone fa-solid fa-shoe-prints"></i>
+                <span class="explore">Explore</span>
+              </button> 
+            </div>
+          </div>
+
+          <div class="hero-content__mini-advert">
+            <div class="hero-content__advert-number">
+              <h4>2025<span>W</span>ade</h4>
+              <p>Contact me</p>
+            </div>
+
+            <div class="hero-content__advert-image">
+              <div class="image-container">
+                <img src="/images/ai.png"/>
+              </div>
+              <p>Check out my projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="about" class="container about">
+        <h2>About Miguni</h2>
+        <p>
+          Miguni Dreamland is a musical journey that blends traditional Kamba sounds with modern beats, creating a unique fusion that resonates with the soul. 
+          The music is characterized by its rich melodies, rhythmic patterns, and heartfelt lyrics that tell stories of love, life, and the human experience.
+        </p>
+        <p>
+          The artist, known for their soulful voice and captivating performances, draws inspiration from the rich cultural heritage of the Kamba people, infusing their music with traditional instruments and rhythms. 
+          This creates a sound that is both nostalgic and contemporary, appealing to a wide audience.
+        </p>
+      </section>
+    </main>
+    <script type="module" src="./src/js/script.js" ></script>
+  </body>
+</html>

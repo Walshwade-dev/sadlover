@@ -1,0 +1,182 @@
+/*import google fonts playfair 400 to 900 and jakarta 200 to 800*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+@import url("./Sections/header.css");
+@import url("./Sections/hero.css");
+
+/* create global root styles for the body */
+:root {
+    --playfair-display: "Playfair Display", serif;
+    --plus-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+
+    --primary-color: #b1454a;
+    --secondary-color: #121212;
+
+    --black-200: #020202;
+    --black-300: #333333;
+    --black-400: #1f1e31;
+    --black-500: #555555;
+    --gray-100: #888888;
+
+    --color-white: #fff;
+    --color-creamson: #fff0de;
+}
+
+/* Dark mode color palette */
+/* Dark mode color palette */
+:root.dark {
+  --primary-color: #006f7e;
+  --secondary-color: #bafffc;
+
+  --black-200: #ffffff;
+  --black-300: #c2c2c2;
+  --black-400: #fafafa;
+  --black-500: #f5f5f5;
+  --gray-100: #00708b;
+
+  --color-white: #02adad;
+  --color-creamson: #464646;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.jusfify-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jusfify-center-row {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    font-family: var(--plus-jakarta-sans);
+    color: var(--black-300);
+    background-color: var(--color-creamson);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+/* some copied code here for all displays */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sushi__hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.sushi__hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* START: about us media queries */
+@media screen and (max-width: 1024px) {
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-us__image {
+    flex-direction: row;
+  }
+
+  .about-us__image-sushi3 {
+    border-bottom: none;
+    border-right: 8px solid var(--color-creamson);
+  }
+
+  .about-us__button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .about-us__image {
+    flex-direction: column;
+  }
+
+  .about-us__image-sushi3 {
+    border-bottom: 8px solid var(--color-creamson);
+    border-right: none;
+  }
+
+  .about-us__button {
+    display: block;
+    top: 47%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-us__image-sushi2 img,
+  .about-us__image-sushi3 img {
+    width: 50%;
+    height: 160px;
+
+    object-fit: contain;
+  }
+
+  .about-us__image div {
+    padding: 32px;
+  }
+
+  .about-us__button {
+    top: 44%;
+  }
+
+  .about-us__content {
+    padding: 32px;
+  }
+}
+/* END: about us media queries */
+
+
+/* START: header media querie */
+@media screen and (max-width: 900px) {
+  .header__nav {
+    background: var(--primary-color);
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .header__menu-mobile {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header__logo {
+    padding-left: 0;
+  }
+}
+/* END: header media queries */
+
+/* START: hero media queries */
+@media screen and (max-width: 1060px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-image img {
+    width: 100%;
+
+    transform: matrix(1, 0.05, 0, 1.25, 0, 0) !important;
+  }
+}
