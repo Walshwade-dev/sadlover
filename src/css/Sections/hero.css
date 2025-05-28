@@ -213,7 +213,7 @@
     transform: scale(1.99); /* Adjust magnification */
 }
 
-.hero-content__advert-image p {
+.hero-content__advert-image p a {
   font-size: 1.5rem;
   font-weight: 400;
   line-height: 32px;
