@@ -49,16 +49,18 @@
             <i class="fa-solid fa-sun-bright"></i>
           </button>
         </div>
-        
-        <div class=" hidden header__menu-mobile">
-          <ul class="header__menu-mobile-list">
-            <li>
-              <i class="fa-sharp fa-solid fa-bars"></i>
-            </li>
-          </ul>
-        </div>
       </nav>
+
+      <!-- Optional: Positioned absolutely for mobile view -->
+      <div class="header__menu-mobile hidden">
+        <ul class="header__menu-mobile-list">
+          <li>
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </li>
+        </ul>
+      </div>
     </header>
+
 
 
     <main>
@@ -116,16 +118,38 @@
       </section>
 
 
-      <section id="about" class="container about">
-        <h2>About Miguni</h2>
-        <p>
-          Miguni Dreamland is a musical journey that blends traditional Kamba sounds with modern beats, creating a unique fusion that resonates with the soul. 
-          The music is characterized by its rich melodies, rhythmic patterns, and heartfelt lyrics that tell stories of love, life, and the human experience.
-        </p>
-        <p>
-          The artist, known for their soulful voice and captivating performances, draws inspiration from the rich cultural heritage of the Kamba people, infusing their music with traditional instruments and rhythms. 
-          This creates a sound that is both nostalgic and contemporary, appealing to a wide audience.
-        </p>
+      <section id="about" class="container about-us">
+        <div class="about-us__content">
+          <h2 class="about-us__title">About Miguni</h2>
+          <p class="about-us__description">
+            Miguni Dreamland is a musical journey that show cases the fusion of traditional Kamba sounds with modern beats, creating a unique sound vibe that resonates with the soul. 
+            The music is characterized by its rich melodies, rhythmic patterns, and heartfelt lyrics that tell stories of love, life, and the human experience.
+          </p>
+          <p class="about-us__description">
+            The artist, Minguni, known for his soulful voice and captivating performances, draws inspiration from the rich cultural heritage of the Kamba people, infusing his music with traditional instruments and rhythms. 
+            This creates a sound that is both nostalgic and contemporary, appealing to a wide audience.
+          </p>
+        </div>
+
+        <div class="about-us__image">
+          <!-- create a div with class name about-us__image-image1 that containts image1.png sourced in public/images-->
+          <div class="about-us__image-image1">
+            <img src="/images/saxa.png" alt="Miguni Dreamland Image 1" />
+          </div>
+          <!-- create a div with class name about-us__image-image2 that containts image2.png sourced in public/images-->
+          <div class="about-us__image-image2">
+            <img src="/images/pallet.png" alt="Miguni Dreamland Image 2" />
+          </div>
+
+          <!-- create a button with class about-us__button with the Learn more text and an image of an arrow up right svg -->
+          <button class="about-us__button">
+            <span>Learn more</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+
+        
       </section>
     </main>
     <script type="module" src="./src/js/script.js" ></script>

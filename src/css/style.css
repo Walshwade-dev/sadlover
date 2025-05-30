@@ -3,6 +3,7 @@
 
 @import url("./Sections/header.css");
 @import url("./Sections/hero.css");
+@import url("./Sections/about.css");
 
 /* create global root styles for the body */
 :root {
@@ -12,7 +13,7 @@
     --primary-color: #b1454a;
     --secondary-color: #121212;
 
-    --black-200: #020202;
+    --black-200: #ffffff;
     --black-300: #333333;
     --black-400: #1f1e31;
     --black-500: #555555;
@@ -30,7 +31,7 @@
 
   --black-200: #ffffff;
   --black-300: #c2c2c2;
-  --black-400: #fafafa;
+ --black-400: #1f1e31;
   --black-500: #f5f5f5;
   --gray-100: #00708b;
 
