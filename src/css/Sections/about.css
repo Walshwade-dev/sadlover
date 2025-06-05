@@ -1,7 +1,7 @@
 .about-us {
     display: flex;
     overflow: hidden;
-    max-height: 100rem;
+    min-height: 100vh;
 }
 
 .about-us__content {
@@ -27,6 +27,20 @@
     font-size: 1.8rem;
     line-height: 2.5rem;
     color: var(--black-300);
+}
+
+.about-us__description h4 {
+    font-family: var(--plus-jakarta-sans);
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    color: var(--color-white);
+}
+
+.about-us__description p {
+    font-family: var(--poiret-one);
+    width: 70%;
+    padding: 1.9rem 0;
 }
 
 .about-us__image {
@@ -57,11 +71,31 @@
 
 
 .about-us__image-image1 {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 8px solid var(--color-creamson);
     height: 50vh;
+}
+
+.about-us__image-overlay {
+    position: absolute;
+    right: 0;
+    font-size: 4rem;
+
+    background-color: var(--primary-color);
+}
+
+.about-us__image-reflection {
+   position: absolute;
+   /*rotate it by 90 degrees*/
+    right: -0;
+    font-family: var(--playfair-display);
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 118px;
+    color: var(--color-white);
 }
 
 .about-us__image-image1 img{

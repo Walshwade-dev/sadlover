@@ -121,35 +121,101 @@
       <section id="about" class="container about-us">
         <div class="about-us__content">
           <h2 class="about-us__title">About Miguni</h2>
-          <p class="about-us__description">
-            Miguni Dreamland is a musical journey that show cases the fusion of traditional Kamba sounds with modern beats, creating a unique sound vibe that resonates with the soul. 
-            The music is characterized by its rich melodies, rhythmic patterns, and heartfelt lyrics that tell stories of love, life, and the human experience.
-          </p>
-          <p class="about-us__description">
-            The artist, Minguni, known for his soulful voice and captivating performances, draws inspiration from the rich cultural heritage of the Kamba people, infusing his music with traditional instruments and rhythms. 
-            This creates a sound that is both nostalgic and contemporary, appealing to a wide audience.
-          </p>
+          <div class="about-us__description">
+            <h4>The Journey</h4>
+            <p>
+              Nzeki, known by his stage name Sad-lover, 
+              is a heartfelt Kamba vocalist, songwriter, and performer hailing 
+              from Machakos County, Kenya. Since 2018, he has captivated audiences 
+              with deeply emotional love songs, exploring themes of romance, 
+              heartbreak, and modern love struggles through poetic lyrics and powerful 
+              vocals. Beyond his musical endeavors, Daniel is also a gifted storyteller,
+               novelist, and scriptwriter, weaving narratives 
+              that resonate with the profound essence of love and pain.
+            </p>
+          </div>
+          <div class="about-us__description">
+            <h4>Musical Inspiration</h4>
+            <p>
+              Sad-lover draws inspiration from the rich Kamba musical heritage, 
+              blending traditional sounds with contemporary influences. His music 
+              is a fusion of soulful melodies and rhythmic beats, creating a unique 
+              sound that resonates with both local and international audiences. 
+              Through his songs, he aims to connect with listeners on an emotional level, 
+              sharing stories that reflect the complexities of love and relationships.
+          </div>
         </div>
 
         <div class="about-us__image">
           <!-- create a div with class name about-us__image-image1 that containts image1.png sourced in public/images-->
           <div class="about-us__image-image1">
             <img src="/images/saxa.png" alt="Miguni Dreamland Image 1" />
+            <div class="about-us__image-overlay">
+              <h2 class="about-us__image-reflection">
+                S
+                A                
+                D  
+              </h2>
+            </div>
           </div>
           <!-- create a div with class name about-us__image-image2 that containts image2.png sourced in public/images-->
           <div class="about-us__image-image2">
             <img src="/images/pallet.png" alt="Miguni Dreamland Image 2" />
+            <div class="about-us__image-overlay">
+              <h2 class="about-us__image-reflection">
+                L
+                O
+                V
+                E                               
+                R
+              </h2>
+            </div>
           </div>
 
           <!-- create a button with class about-us__button with the Learn more text and an image of an arrow up right svg -->
           <button class="about-us__button">
-            <span>Learn more</span>
+            <span>View more</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
+        </div>  
+      </section>
+
+      <section class="container music-catalogue" id="music">
+        <h2 class="music-catalogue__title">Music Catalogue</h2>
+        <p class="music-catalogue__description">
+          Explore the diverse range of music that Miguni Dreamland has to offer. From soulful ballads to upbeat tracks, each song is a testament to the rich musical heritage and contemporary influences that shape the sound.
+        </p>
+
+        <div class="music-catalogue__grid">
+          <!-- Create a list of music items with image, title, artist and play button -->
+          <div class="music-catalogue__item">
+            <img src="/images/song1.png" alt="Music 1" />
+            <div class="music-catalogue__item-content">
+              <h3>Kutumikia Maisha</h3>
+              <p>2021</p>
+              <button class="play-button"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+          
+          <div class="music-catalogue__item">
+            <img src="/images/song1.png" alt="Music 1" />
+            <div class="music-catalogue__item-content">
+              <h3>Kutumikia Maisha</h3>
+              <p>2021</p>
+              <button class="play-button"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+
+          <div class="music-catalogue__item">
+            <img src="/images/song1.png" alt="Music 1" />
+            <div class="music-catalogue__item-content">
+              <h3>Kutumikia Maisha</h3>
+              <p>2021</p>
+              <button class="play-button"><i class="fa-solid fa-play"></i> Play</button>
+            </div>
+          </div>
+          <!-- Add more music items as needed -->
         </div>
-
-
-        
       </section>
     </main>
     <script type="module" src="./src/js/script.js" ></script>
