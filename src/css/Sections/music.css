@@ -1,3 +1,4 @@
+/* === Music Catalogue Section === */
 .music-catalogue {
     min-height: 100vh;
     background-color: var(--primary-color);
@@ -22,94 +23,97 @@
     margin-bottom: 2rem;
 }
 
-/* have a grid that spans 3 columns and the 2 rows*/
-
+/* === Responsive Grid === */
 .music-catalogue__grid {
     display: grid;
     place-items: center;
-
     width: 80%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem 1rem;
     padding: 0 2rem;
+    margin-bottom: 4rem;
 }
 
+/* === Music Card === */
 .music-catalogue__item {
     background-image: linear-gradient(to bottom right, var(--color-white), var(--black-400));
     color: var(--black-400);
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 480px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-}
-
-.music-catalogue__item img {
-    width: 100%;
-    height: 70%;
-    border-radius: 10px 10px 0 0;
-}
-
-.music-catalogue__item-content {
-    padding: 0 0.9rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-}
-
-.music-catalogue__item-content h3 {
-    font-family: var(--playfair-display);
-    font-size: 1.8rem;
-    color: var(--secondary-color);
-}
-
-.music-catalogue__item-content p {
-    font-family: var(--plus-jakarta-sans);
-    font-size: 1.2rem;
-    color: var(--black-300);
-    text-align: left;
-}
-
-.music-catalogue__item button {
-    background-color: var(--secondary-color);
-    color: var(--color-white);
-    border: none;
-    border-radius: 5px;
-    margin-top: -1rem;
-    padding: 0.5rem 0.8rem;
-    font-family: var(--plus-jakarta-sans);
-    font-size: 1.2rem;
-    cursor: pointer;
-}
-
-.music-catalogue__item button:hover {
-    background-color: var(--black-200);
-    color: var(--primary-color);
+    transition: transform 0.3s ease;
 }
 
 .music-catalogue__item:hover {
     transform: scale(1.05);
-    transition: transform 0.3s ease;
 }
 
-.music-catalogue__item:active {
-    transform: scale(0.95);
-    transition: transform 0.1s ease;
+/* === Image Wrapper === */
+.music-catalogue__img-wrapper {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
 }
 
-.music-catalogue__item:focus {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--secondary-color);
+.music-catalogue__img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
-.music-catalogue__item:focus-visible {
-    outline: none;
-    box-shadow: 0 0 0 2px var(--secondary-color);
+/* === Text Content Section === */
+.music-catalogue__item-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.music-catalogue__item:focus-within {
-    box-shadow: 0 0 0 2px var(--secondary-color);
+/* === Title & Year === */
+.music-catalogue__item-content h3 {
+    font-family: var(--playfair-display);
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.music-catalogue__item-content p {
+    font-family: var(--plus-jakarta-sans);
+    font-size: 1.1rem;
+    color: var(--black-300);
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/* === Full-Width Play Button === */
+.music-catalogue__item-content button {
+    background-color: var(--secondary-color);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-family: var(--plus-jakarta-sans);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.music-catalogue__item-content button:hover {
+    background-color: var(--black-200);
+    color: var(--primary-color);
 }
