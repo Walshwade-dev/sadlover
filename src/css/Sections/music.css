@@ -58,13 +58,14 @@
     width: 100%;
     height: 70%;
     overflow: hidden;
+    background-color: #f9f9f9; /* optional: improves contrast for non-full images */
 }
 
 .music-catalogue__img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    object-position: center;
 }
 
 /* === Text Content Section === */

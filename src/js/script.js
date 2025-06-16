@@ -34,8 +34,12 @@ async function renderVideos() {
   const videos = await fetchYouTubeData();
 
   // Only use this videoId for the local image
-  const localImageVideoId = 'AM32gC3arEI';
-  const localImagePath = './images/song1.png';
+  const localImages = {
+    'RnGT4ivNrhs': './images/aviator2.png',
+    'fEL_FsY62pY': './images/Yutia.png',
+    'AM32gC3arEI': './images/song1.png',
+    '8VzM_jA6HBE': './images/kwongela.png'
+  };
 
   videos.forEach(video => {
     const { videoId } = video.id;
@@ -44,9 +48,7 @@ async function renderVideos() {
     const shortTitle = truncateTitle(title, 16);
 
     // Determine image source
-    const imageSrc = (videoId === localImageVideoId)
-      ? localImagePath
-      : thumbnails.medium.url;
+    const imageSrc = localImages[videoId] || thumbnails.medium.url;
 
     const songCard = document.createElement('div');
     songCard.classList.add('music-catalogue__item');
